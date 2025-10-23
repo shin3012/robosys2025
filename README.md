@@ -10,4 +10,4 @@
 
 
 このソフトウェアパッケージは，GPL3.0ライセンスの下，再頒布および使用が許可されます．
-@ 2025 Shinnosuke Saito
+©　2025 Shinnosuke Saito
