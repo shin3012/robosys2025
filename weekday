@@ -8,7 +8,7 @@ import datetime
 WEEKDAY = "月火水木金土日"
 
 def emit_error(msg, line_no):
-    print(f"error: {msg} at line {line_no}", file=sys.stdeer)
+    print(f"error: {msg} at line {line_no}", file=sys.stderr)
     sys.exit(1)
 
 for i, line in enumerate(sys.stdin, 1):
