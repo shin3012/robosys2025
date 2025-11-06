@@ -16,10 +16,9 @@ for i, line in enumerate(sys.stdin, 1):
     if not s:
         continue
 
-try:
-    dt = datetime.datetime.strptime(s, "%Y-%m-%d").date()
-except Exception:
-    emit_error("invalid date format (expect YYYY-MM-DD)", i)
+    try:
+        dt = datetime.datetime.strptime(s, "%Y-%m-%d").date()
+    except Exception:
+        emit_error("invalid date format (expect YYYY-MM-DD)", i)
 
-wd = dt.weekday()
-print(WEEKDAY[wd])
+    print(WEEKDAY[dt.weekday()])
