@@ -1,0 +1,25 @@
+#!/usr/bin/python3
+#SPDX-FileCopyrightText: 2025 Saito Shinnosuke
+#SPDX-License-Identifier: GPL-3.0-only
+
+import sys
+import datetime
+
+WEEKDAY = "月火水木金土日"
+
+def emit_error(msg, line_no):
+    print(f"error: {msg} at line {line_no}", file=sys.stdeer)
+    sys.exit(1)
+
+for i, line in enumerate(sys.stdin, 1):
+    s = line.strip()
+    if not s:
+        continue
+
+try:
+    dt = datetime.datetime.strptime(s, "%Y-%m-%d").date()
+except Exception:
+    emit_error("invalid date format (expect YYYY-MM-DD)", i)
+
+wd = dt.weekday()
+print(WEEKDAY[wd])
