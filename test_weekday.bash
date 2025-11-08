@@ -20,6 +20,12 @@ rc=$?
 grep -q 'invalid date format' err3 || ng "$LINENO"
 
 
+out="$(printf '%s\n' 2024/11/08 | ./weekday 2>err4)"
+rc=$?
+[ $rc -eq 1 ] || ng "$LINENO"
+[ -z "$out" ] || ng "$LINENO"
+grep -q 'invalid date format' err4 || ng "$LINENO"
+
 
 
 
