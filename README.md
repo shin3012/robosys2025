@@ -3,8 +3,8 @@
 標準入力で受け取った日程(YYYY-MM-DD)を日本語の曜日1文字で標準出力します．エラーは標準エラー出力で，終了コード１で終了します．空行は無視します．
 
 ## ダウンロード
-git clone https://github.com/shin3012/robosys2025.git
-cd robosys2025
+git clone https://github.com/shin3012/robosys2025.git <b>
+cd robosys2025 <b>
 chmod +x weekday test_weekday.bash
 
 ## 使い方
@@ -33,8 +33,8 @@ chmod +x weekday test_weekday.bash
 ## テスト環境
 - Ubuntu 20.04 LTS 
 
--このソフトウェアパッケージは，GPL3.0ライセンスの下，再頒布および使用が許可されます.
--このパッケージは，Ryuichi Ueda由来のコード(@ 2025 Ryuichi Ueda)を利用しています
--このパッケージのコードは下記のスライド(CC-BY-SA 4.0 by Ryuichi Ueda)のものを，本人の許可を得て自身の著作としたものです．
-  - [ryuichiueda/slides_marp/robosys2025](https://github.com/ryuichiueda/slides_marp/tree/master/robosys2025)
+- このソフトウェアパッケージは，GPL3.0ライセンスの下，再頒布および使用が許可されます.
+- このパッケージは，Ryuichi Ueda由来のコード(@ 2025 Ryuichi Ueda)を利用しています
+- このパッケージのコードは下記のスライド(CC-BY-SA 4.0 by Ryuichi Ueda)のものを，本人の許可を得て自身の著作としたものです．
+  - [ryuichiueda/slides_marp/robosys2025](https://github.com/ryuichiueda/slides_marp/tree/master/robosys2025) <b>
 ©　2025 Shinnosuke Saito
