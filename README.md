@@ -40,5 +40,5 @@ printf '%s\n' 2025/11/08 | ./weekday 1>ok 2>err ; echo $? <br>
 - このソフトウェアパッケージは，GPL3.0ライセンスの下，再頒布および使用が許可されます.
 - このパッケージは，Ryuichi Ueda由来のコード(@ 2025 Ryuichi Ueda)を利用しています
 - このパッケージのコードは下記のスライド(CC-BY-SA 4.0 by Ryuichi Ueda)のものを，本人の許可を得て自身の著作としたものです．
-  - [ryuichiueda/slides_marp/robosys2025](https://github.com/ryuichiueda/slides_marp/tree/master/robosys2025) <br> 
-©　2025 Shinnosuke Saito
+- [ryuichiueda/slides_marp/robosys2025](https://github.com/ryuichiueda/slides_marp/tree/master/robosys2025) <br> 
+© 2025 Shinnosuke Saito
