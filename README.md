@@ -13,7 +13,7 @@ printf '%s\n' 2025-11-06 | ./weekday <br>
 => 木
 
 ### 例2
-print '%s\n' 2025-11-06 2028-02-09 | ./weekday <br>
+printf '%s\n' 2025-11-06 2028-02-09 | ./weekday <br>
 => 木<br>
 => 火
 
