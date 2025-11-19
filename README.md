@@ -31,10 +31,10 @@ printf '%s\n' 2025/11/08 | ./weekday 1>ok 2>err ; echo $? <br>
 - python
   - テスト済みバージョン: 3.7 ~ 3.10
 ## テスト環境
-- Ubuntu 20.04 LTS 
+- Ubuntu 20.04 LTS
 
-
-
+##GITHub Actionsのテスト
+[![test](https://github.com/shin3012/robosys2025/actions/workflows/test_weekday.yml/badge.svg)](https://github.com/shin3012/robosys2025/actions/workflows/test_weekday.yml) 
 
 ## 最後に
 - このソフトウェアパッケージは，GPL3.0ライセンスの下，再頒布および使用が許可されます.
