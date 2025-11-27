@@ -1,6 +1,6 @@
 #!/bin/bash -xv 
-#SPDX-FileCopyrightText: 2025 Saito Shinnosuke
-#SPDX-License-Identifier: GPL-3.0-only
+# SPDX-FileCopyrightText: 2025 Saito Shinnosuke
+# SPDX-License-Identifier: GPL-3.0-only
 
 ng(){ echo "$1 行目が違うよ"; exit 1; }
 
