@@ -13,14 +13,14 @@ out="$(printf '%s\n' 2028-02-29 | ./weekday)"
 out="$(printf '%s\n' 2025-11-06 2028-02-29 | ./weekday)"
 [ "$out" = $'木\n火' ] || ng "$LINENO"
 
-out="$(printf '%s\n' 2025-13-01 | ./weekday )"
+out="$(printf '%s\n' 2025-13-01 | ./weekday 2>err3 )"
 rc=$?
 [ $rc -eq 1 ] || ng "$LINENO"
 [ -z "$out" ] || ng "$LINENO"
 grep -q 'invalid date format' err3 || ng "$LINENO"
 
 
-out="$(printf '%s\n' 2024/11/08 | ./weekday )"
+out="$(printf '%s\n' 2024/11/08 | ./weekday 2>err4 )"
 rc=$?
 [ $rc -eq 1 ] || ng "$LINENO"
 [ -z "$out" ] || ng "$LINENO"
