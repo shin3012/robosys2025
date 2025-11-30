@@ -1,13 +1,20 @@
 name: test
-on: push
+on: pushname: weekday-tests
+on: [push, pull_request]
+
 jobs:
   test:
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
-        python-version: ["3.7", "3.8", "3.9", "3.10"]
+        python-version: ["3.8", "3.9", "3.10", "3.x"]  
     steps:
       - uses: actions/checkout@v4
+      - name: Setup Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
       - name: Make scripts executable
         run: chmod +x weekday test_weekday.bash
       - name: Run tests
