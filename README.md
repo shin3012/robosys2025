@@ -2,6 +2,8 @@
 
 標準入力で受け取った日付(YYYY-MM-DD)を日本語の曜日1文字で標準出力します．エラーは標準エラー出力で，終了コード１で終了します．空行は無視します．
 
+[![test](https://github.com/shin3012/robosys2025/actions/workflows/test_weekday.yml/badge.svg)](https://github.com/shin3012/robosys2025/actions/workflows/test_weekday.yml)
+
 ## ダウンロード
 ```bash
 $ git clone https://github.com/shin3012/robosys2025.git 
@@ -44,7 +46,7 @@ $ cat err # # invalid date format (except YYYY-MM-DD) at line 1
 - python
   - テスト済みバージョン: 3.7 ~ 3.10
 ## テスト環境
-- Ubuntu 20.04 LTS
+- Ubuntu 22.04 LTS
 
 ## テスト結果
 ### 実行方法
@@ -52,10 +54,7 @@ $ cat err # # invalid date format (except YYYY-MM-DD) at line 1
 $ ./test_weekday.bash
 OK
 ```
-
-## GitHub Actionsのテスト
-[![test](https://github.com/shin3012/robosys2025/actions/workflows/test_weekday.yml/badge.svg)](https://github.com/shin3012/robosys2025/actions/workflows/test_weekday.yml) 
-
+ 
 
 ## 最後に
 - このソフトウェアパッケージは，GPL3.0ライセンスの下，再頒布および使用が許可されます.
