@@ -42,11 +42,10 @@ $ cat err # # invalid date format (except YYYY-MM-DD) at line 1
 ```
 
 
-## 必要なソフトウェア
-- python
-  - テスト済みバージョン: 3.7 ~ 3.10
-## テスト環境
-- Ubuntu 22.04 LTS
+## 環境
+- 開発環境(ローカル)：ubuntu 20.04 / python 3.8
+- 実行環境(リモート)：GitHub Actions ubuntu-latest / python 3.7~3.10
+
 
 ## テスト結果
 ### 実行方法
